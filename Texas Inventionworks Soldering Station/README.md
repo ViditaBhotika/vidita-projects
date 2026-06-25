@@ -24,7 +24,7 @@ Students at TIW can scan their student ID to check out soldering kits and equipm
 - **Runtime**: Python
 - **Cloud Platform**: AWS (Lambda, DynamoDB, Secrets Manager)
 - **Equipment Management**: Fabman API
-- **Authentication**: Student EID (Engineering ID) + Fabman member verification
+- **Authentication**: Student EID (UT ID) + Fabman member verification
 
 ## Deployment
 

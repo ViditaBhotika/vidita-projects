@@ -30,7 +30,7 @@ Students at TIW can scan their student ID to check out soldering kits and equipm
 
 This system is deployed as an AWS Lambda function. The function is triggered via HTTP requests with query parameters specifying:
 - `machine`: Equipment type (e.g., `FAKE_TEST_EQUIPMENT`)
-- `eid`: Student's Engineering ID
+- `eid`: Student's UT ID
 - `action` (optional): Special actions like `status` to check machine availability
 
 ## API Usage

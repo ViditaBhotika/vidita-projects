@@ -33,49 +33,6 @@ This system is deployed as an AWS Lambda function. The function is triggered via
 - `eid`: Student's UT ID
 - `action` (optional): Special actions like `status` to check machine availability
 
-## API Usage
-
-### Check Machine Status
-```
-GET /function?machine=FAKE_TEST_EQUIPMENT&action=status
-```
-Returns whether the machine is idle or currently in use.
-
-**Response (Idle):**
-```json
-{
-  "status": "idle"
-}
-```
-
-**Response (Active):**
-```json
-{
-  "status": "active",
-  "eid": "A00123456"
-}
-```
-
-### Start/Stop Session
-```
-GET /function?machine=FAKE_TEST_EQUIPMENT&eid=A00123456
-```
-Toggles the student's session. If no active session exists, starts one. If a session is active, stops it.
-
-**Response (Success):**
-```json
-{
-  "session_id": 12345
-}
-```
-
-**Response (Error):**
-```json
-{
-  "message": "Member not registered with Fabman"
-}
-```
-
 ## How It Works
 
 ### Authentication Flow
